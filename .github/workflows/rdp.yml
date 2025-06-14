@@ -1,5 +1,11 @@
+on:
+    workflow_dispatch:
+
+jobs:
+  setup-rdp-tunnel:
+      runs-on: windows-latest
 steps:
-    - name: ecronicoestudio
+    - name: Check out the repository
       uses: actions/checkout@v2
 
     - name: Download and Install Playit
